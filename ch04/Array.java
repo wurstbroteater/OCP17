@@ -13,7 +13,7 @@ public class Array {
             //compiles but throws ArrayStoreException on runtime
             objects[0] = new StringBuilder();
         } catch (ArrayStoreException e ) {
-            print("ArrayStoreException was thrown!");
+            print("Error because of trying to store StringBuilder");
         } finally {
             print();
         }
