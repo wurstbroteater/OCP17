@@ -9,7 +9,7 @@ currentChapter="$(remove_trailing_slash $1)"
 currentPackage="$currentChapter/*"
 currentClass=$2
 
-rm ./$currentChapter/*/*.class ./util/*/*.class
+rm -rf ./$currentChapter/*.class ./util/*.class
 
 javac util/* $currentPackage 
 java "$currentChapter.$currentClass"
