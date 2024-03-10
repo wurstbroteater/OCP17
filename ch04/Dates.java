@@ -41,6 +41,9 @@ public class Dates {
         var t1 = LocalTime.of(20, 30);
         var t2 = LocalTime.of(20, 40);
         var tx = LocalDate.of(2024, 12, 31);
+        //negative years are allowed, month and days need to be in range [1,12] or [1,31] otherwise exception!
+        var txx = LocalDate.of(-1, 12, 31);
+        print("Date with negative year", txx);
         print("Hours between 20:30-20:40", ChronoUnit.HOURS.between(t1, t2)); // 0
         print("Minutes between 20:30-20:40", ChronoUnit.MINUTES.between(t1, t2)); // 10
         //print(ChronoUnit.DAYS.between(t1, t2)); execption: locale time does not know days

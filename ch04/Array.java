@@ -54,5 +54,6 @@ public class Array {
         int vars2 [][]; //2D
         int[] vars3 []; //2D
         int[] vars4 [], vars5 [][]; //2D, 3D
+        int[] vars6[] = new int[3][];
     }
 }
